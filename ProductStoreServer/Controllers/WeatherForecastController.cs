@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using ProductStoreServer.Models;
+using NorthwindServer.Models;
 
-namespace ProductStoreServer.Controllers
+namespace NorthwindServer.Controllers
 {
     [ApiController]
 	[Route("[controller]")]

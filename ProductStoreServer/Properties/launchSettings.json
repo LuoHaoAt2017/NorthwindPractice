@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "ProductStoreServer": {
+    "NorthwindServer": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

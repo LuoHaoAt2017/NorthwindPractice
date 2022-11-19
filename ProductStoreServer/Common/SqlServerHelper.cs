@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
 
-namespace ProductStoreServer.Common
+namespace NorthwindServer.Common
 {
 	public class SqlServerHelper
 	{

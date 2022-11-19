@@ -1,4 +1,4 @@
-﻿namespace ProductStoreServer.Common
+﻿namespace NorthwindServer.Common
 {
 	public class MySqlHelper
 	{

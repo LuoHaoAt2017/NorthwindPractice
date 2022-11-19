@@ -1,4 +1,4 @@
-namespace ProductStore
+namespace NorthwindClient
 {
 	internal static class Program
 	{
@@ -8,7 +8,7 @@ namespace ProductStore
 			FileInfo info = new FileInfo("log4net.config");
 			log4net.Config.XmlConfigurator.Configure(info);
 			ApplicationConfiguration.Initialize();
-			Application.Run(new ProductStore());
+			Application.Run(new NorthwindClient());
 		}
 	}
 }

@@ -1,17 +1,18 @@
-﻿namespace ProductStoreServer.Models
+﻿namespace NorthwindServer.Models
 {
 	public class Customer
 	{
-		public string? CustomerId;
-		public string? CompanyName;
-		public string? ContactName;
-		public string? ContactTitle;
-		public string? Address;
-		public string? City;
-		public string? Region;
-		public string? PostalCode;
-		public string? Country;
-		public string? Phone;
-		public string? Fax;
+		public string? CustomerId = "";
+		public string? CustomerName = "";
+		public string? CompanyName = "";
+		public string? ContactName = "";
+		public string? ContactTitle = "";
+		public string? Address = "";
+		public string? City = "";
+		public string? Region = "";
+		public string? PostalCode = "";
+		public string? Country = "";
+		public string? Phone = "";
+		public string? Fax = "";
 	}
 }

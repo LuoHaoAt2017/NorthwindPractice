@@ -1,6 +1,6 @@
 ﻿using log4net;
 
-namespace ProductStoreServer
+namespace NorthwindServer
 {
 	internal class LogHelper
 	{

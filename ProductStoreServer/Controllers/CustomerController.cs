@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProductStoreServer.Models;
-using ProductStoreServer.Services;
+using NorthwindServer.Models;
+using NorthwindServer.Services;
 
-namespace ProductStoreServer.Controllers
+namespace NorthwindServer.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

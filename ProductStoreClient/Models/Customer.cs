@@ -1,8 +1,9 @@
 ﻿
-namespace ProductStoreClient.Models
+namespace NorthwindClient.Models
 {
 	public record class Customer(
-		string CustomerId = "", 
+		string CustomerId = "",
+		string CustomerName = "",
 		string CompanyName = "", 
 		string ContactName = "", 
 		string ContactTitle = "", 

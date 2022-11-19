@@ -1,6 +1,6 @@
 ﻿using System.Data;
 
-namespace ProductStoreServer.Common
+namespace NorthwindServer.Common
 {
 	public enum DefaultDB
 	{

@@ -1,14 +1,14 @@
 ﻿using System.Data;
-using ProductStoreServer.Common;
-using ProductStoreServer.Models;
+using NorthwindServer.Common;
+using NorthwindServer.Models;
 
-namespace ProductStoreServer.Services
+namespace NorthwindServer.Services
 {
 	public class CustomerService
 	{
 		public List<Customer> GetCustomerList()
 		{
-			string conStr = "server=10.5.67.45;database=Northwind;uid=tomcat;pwd=LuoHao123";
+			string conStr = "server=192.168.0.193;database=northwind;uid=tomcat;pwd=LuoHao123";
 			string sqlStr = "select * from Customers";
 			DataTable dt = DBHelper.ExecuteSql(DefaultDB.SQLServer, sqlStr, conStr);
 
@@ -20,16 +20,17 @@ namespace ProductStoreServer.Services
 				{
 					Customer customer = new Customer();
 					customer.CustomerId = GetFieldValue(row, "CustomerId");
-					customer.CompanyName = GetFieldValue(row, "CompanyName");
+					customer.CustomerName = GetFieldValue(row, "CustomerName");
+					// customer.CompanyName = GetFieldValue(row, "CompanyName");
 					customer.ContactName = GetFieldValue(row, "ContactName");
-					customer.ContactTitle = GetFieldValue(row, "ContactTitle");
+					//customer.ContactTitle = GetFieldValue(row, "ContactTitle");
 					customer.Address = GetFieldValue(row, "Address");
 					customer.City = GetFieldValue(row, "City");
-					customer.Region = GetFieldValue(row, "Region");
+					//customer.Region = GetFieldValue(row, "Region");
 					customer.PostalCode = GetFieldValue(row, "PostalCode");
-					customer.Country = GetFieldValue(row, "Phone");
-					customer.Phone = GetFieldValue(row, "CompanyName");
-					customer.Fax = GetFieldValue(row, "Fax");
+					// customer.Phone = GetFieldValue(row, "Phone");
+					customer.Country = GetFieldValue(row, "Country");
+					//customer.Fax = GetFieldValue(row, "Fax");
 					list.Add(customer);
 				}
 			}

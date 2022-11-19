@@ -1,4 +1,4 @@
-namespace ProductStoreServer.Models
+namespace NorthwindServer.Models
 {
     public class WeatherForecast
     {
