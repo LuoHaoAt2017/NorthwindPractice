@@ -1,5 +1,6 @@
 using NorthwindClient.Models;
 using System.Net.Http.Json;
+using System.Windows.Forms;
 
 namespace NorthwindClient
 {
@@ -47,7 +48,6 @@ namespace NorthwindClient
 		{
 			foreach (var customer in customers)
 			{
-				//LogHelper.Log($"{todo.ContactName} - {todo.ContactTitle}");
 				string[] row = new string[7]
 				{
 					customer.CustomerId,
@@ -65,11 +65,12 @@ namespace NorthwindClient
 		private void SetupDataGridView()
 		{
 			dataGridView.ColumnCount = columns.Length;
-
+			// dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
 			for (int i = 0; i < columns.Length; i++)
 			{
 				dataGridView.Columns[i].Name = columns[i];
 				dataGridView.Columns[i].DisplayIndex = i;
+				dataGridView.Columns[i].Width = 240;
 			}
 		}
 
