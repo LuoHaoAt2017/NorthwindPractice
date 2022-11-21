@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,7 +22,6 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Configurations\" />
-    <Folder Include="Helpers\" />
     <Folder Include="Common\" />
     <Folder Include="Documents\" />
   </ItemGroup>
