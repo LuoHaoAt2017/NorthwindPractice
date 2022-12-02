@@ -97,7 +97,8 @@ namespace NorthwindClient
 
 		private void FetchProductList()
 		{
-			string conStr = "server=192.168.0.193;database=northwind;uid=tomcat;pwd=LuoHao123";
+			//string conStr = "server=192.168.0.193;database=northwind;uid=tomcat;pwd=LuoHao123";
+			string conStr = "server=10.5.67.45;database=Northwind;uid=tomcat;pwd=LuoHao123";
 			string sqlStr = "select * from Products";
 			DataTable dt = DBHelper.ExecuteSql(DefaultDB.SQLServer, sqlStr, conStr);
 
@@ -112,8 +113,8 @@ namespace NorthwindClient
 					product.ProductName = GetFieldValue(row, "ProductName");
 					product.SupplierId = GetFieldValue(row, "SupplierId");
 					product.CategoryId = GetFieldValue(row, "CategoryId");
-					product.Unit = GetFieldValue(row, "Unit");
-					product.Price = GetFieldValue(row, "Price");
+					product.Unit = GetFieldValue(row, "UnitsInStock");
+					product.Price = GetFieldValue(row, "UnitPrice");
 					list.Add(product);
 				}
 			}
